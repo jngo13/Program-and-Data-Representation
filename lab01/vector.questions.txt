@@ -1,0 +1,3 @@
+In the line of code in svutil.cpp:
+void svOutput ( const vector<string> &vect )
+Why is the parameter const and containing '&'?

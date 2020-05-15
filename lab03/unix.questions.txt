@@ -1,0 +1,3 @@
+Justin Ngo, jmn4fms, 2/3/20, unix.questions.txt
+
+What exactly is the kernel and how does it work in relation to the computer and operating system?

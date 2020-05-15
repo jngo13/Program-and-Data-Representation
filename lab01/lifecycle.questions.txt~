@@ -1,0 +1,5 @@
+//Justin Ngo, jmn4fms, 1/20/20, lifecycle.questions.txt
+
+Why is the value of the second object in certain parts of the lab (part 2) different after calling the MyObject destructor? For example:
+MyObject Destructor:            ("Bob", 12)
+MyObject Destructor:            ("Bob", 11)

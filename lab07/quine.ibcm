@@ -1,0 +1,20 @@
+C006	00	jmp
+0012    01      program size
+3000    02      loadit
+4000    03      storeit
+0001    04      one
+0000    05      i
+3001	06	load size
+E014	07	jmpl
+3002	08	load loadit
+5005	09	add i
+400B	0A	store	
+0000	0B	doit 
+1800	0C	print
+3005	0D	load accumulator = i
+5004	0F	add
+4005	10      store i
+3006	11      load start
+6005	12
+C007	13
+0000	14

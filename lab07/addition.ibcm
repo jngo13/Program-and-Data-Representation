@@ -1,0 +1,26 @@
+C007 000     jmp     start   skip around variables
+0000 001     dw      0       int a
+0000 002     dw      0       int b
+0000 003     dw      0       int c
+0000 004     
+0000 005
+0000 006
+1000 007     read            read first input a
+4001 008     store   a       a = accumulator
+1000 009     read            read second input b
+4002 00A     store   b       b = accumulator
+1000 00B     read            read third input c
+4003 00C     store   c 
+3001 00D     load    a       accumulator = a
+5002 00E     add b           accumulator += b
+5003 00F     add c           accumulator += c
+1800 010     print           prints out sum
+D013 011     jmpe    end     if(accumulator=0):goto end             
+C007 012     jmp     start   else: repeats steps
+3001 013     load    a
+1800 014     print           prints a
+3002 015     load    b 
+1800 016     print           print b
+3003 017     load    c          
+1800 018     print           print c
+0000 019     halt

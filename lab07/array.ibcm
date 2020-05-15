@@ -1,0 +1,43 @@
+C00C	000		jmp	start
+0025	001	arr	dw	20	int arr[]
+0005	002	size	dw	5	size = 5
+0000	003	max	dw	0	max = 0
+0000	004	i	dw	0	i
+3000	005	loadit	dw	3000
+0000	006	current	dw	0	current = 0
+0001	007	one	dw	1	1
+0000	008	Blank Space
+0000	009	Blank Space
+0000	00A	Blank Space
+0000	00B	Blank Space	
+3002	00C	start	load	size	
+6004	00D		sub	i	accumulator = size - 1
+E023	00E		jmpl	end	if(accumulator < 0): goto end	
+D023	00F		jmpe	end	if(accumulator ==0): goto end
+B000    010	Blank Space
+B000    011	Blank Space
+3005	012		load	loadit	loading arr[i]
+5001	013		add	arr[]
+5004	014		add	i
+4017	015		store	doit	store accessing element
+4006	016		store	current store current element 
+0000	017	doit	dw	0	loading arr[i]
+6003	018		sub	max	accumulator= arr[i]-max
+E01F	019		jmpl	endl	if(arr[i] <= max): goto endl
+D01F	01A		jmpe	endl	if(arr[i] == max): goto endl
+B000    01B	Blank Space
+B000    01C	Blank Space
+5003	01D		add	max	accumulator = max+accumulator
+4003	01E		store	max	max= accumulator
+3004	01F	end	load	i	
+5007	020		add	1	i++
+4004	021		store	i	i = accumulator
+C00C	022		jmp	start
+3003	023	end	load	max	
+1800	024		printH	print max
+0000	025	arr[]	dw	0	 int arr[]
+0000	026	arr0	dw	0	 arr[0] = 0
+0018	027	arr1	dw	18	 arr[1] = 18
+0004	028	arr2	dw	4        arr[2] = 4
+0042	029	arr3	dw	42       arr[3] = 42
+0035	02A	arr4	dw	35       arr[4] = 35

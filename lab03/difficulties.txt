@@ -1,0 +1,6 @@
+Justin Ngo
+jmn4fms
+2/7/20
+difficulties.txt
+
+A difficulty I encountered in getting my code to work for the postlab was making sure all the file names  and classes were included and typed in correctly in each file. An example of this was having to change the stack<int> calcstack in my original lab 3 code to Stack *calcstack as it had become a pointer in the linked list implementation. Another difficulty I encountered was naming my variables similar to the methods that were being called near them and causing the compiler to be confused and not recognizing the function I was calling. An example of this is when I tried setting int top = top();. I fixed this by renaming the variable and learned to be careful of that when coding in c++. Another difficulty I encountered was getting the postfix calculator to work properly when multiple inputs of the same number were inputted. Something in my linked list implementation caused the iterator to mess up the order of the stack and produce the wrong final calculation when testing the subtraction.txt.

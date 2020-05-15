@@ -1,0 +1,4 @@
+How does the "->" work in the code? For example:
+l->display();
+
+What is the difference between the ">>" or "<<" and "->"?
