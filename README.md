@@ -1,5 +1,5 @@
 # Program and Data Representation
-My completed labs from CS 2150 at the University of Virginia
+My completed labs from CS 2150 at the University of Virginia.
 
 The labs for this course:
 
