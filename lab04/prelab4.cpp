@@ -1,7 +1,7 @@
-//Justin Ngo
-//jmn4fms
-//  prelab4.cpp
-//  Created by Justin on 2/10/20.
+// Justin Ngo
+// jmn4fms
+// prelab4.cpp
+// Created by Justin on 2/10/20.
 
 #include <iostream>
 #include <string>

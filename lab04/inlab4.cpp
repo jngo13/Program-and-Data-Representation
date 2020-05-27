@@ -1,7 +1,7 @@
 // Justin Ngo
 // jmn4fms
-//  inlab4.cpp
-//  Created by Justin on 2/11/20.
+// inlab4.cpp
+// Created by Justin on 2/11/20.
 
 #include <stdio.h>
 #include <iostream>

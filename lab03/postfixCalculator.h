@@ -1,17 +1,13 @@
 // Justin Ngo
 // jmn4fms
-//  postfixCalculator.h
-//  
-//
-//  Created by Justin on 2/3/20.
-//
+// postfixCalculator.h
+// Created by Justin on 2/3/20.
 
 #ifndef postfixCalculator_h
 #define postfixCalculator_h
 
 #include <stdio.h>
 #include <iostream>
-//#include <stack>
 #include <cstdlib>
 
 #include "stack.h"

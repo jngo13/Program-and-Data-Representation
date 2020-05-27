@@ -1,10 +1,7 @@
 // Justin Ngo
 // jmn4fms
-//  testPostfixCalc.cpp
-//  
-//
-//  Created by Justin on 2/3/20.
-//
+// testPostfixCalc.cpp
+// Created by Justin on 2/3/20.
 
 #include <stdio.h>
 #include <iostream>

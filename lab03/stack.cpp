@@ -1,10 +1,7 @@
-//Justin Ngo
-//jmn4fms
-//  stack.cpp
-//  
-//
-//  Created by Justin on 2/7/20.
-//
+// Justin Ngo
+// jmn4fms
+// stack.cpp
+// Created by Justin on 2/7/20.
 
 #include "stack.h"
 #include <iostream>
@@ -14,6 +11,7 @@
 #include "List.h"
 #include "ListItr.h"
 #include "postfixCalculator.h"
+
 using namespace std;
 
 Stack::Stack(){

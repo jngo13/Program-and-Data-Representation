@@ -1,9 +1,6 @@
-//Justin Ngo, jmn4fms
-//  List.cpp
-//  
-//
-//  Created by Justin on 1/26/20.
-//
+// Justin Ngo, jmn4fms
+// List.cpp
+// Created by Justin on 1/26/20.
 
 #include <stdio.h>
 #include <iostream>
@@ -186,7 +183,7 @@ ListNode* List::getTail(){
 // or backwards (tail -> head) when forward is false
 // You **must** use your ListItr class to implement this function!
 void printList(List& source, bool forward){
-    if(forward ==true){
+    if(forward == true){
         ListItr iterator((*source.getHead()).getNext()); //iterator
         while((iterator).isPastEnd()==false){
             cout << iterator.retrieve() << endl;

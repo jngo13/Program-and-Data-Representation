@@ -43,7 +43,7 @@ int main (int argc, char **argv) {
     MiddleEarth me(width, height, num_cities, rand_seed);
     vector<string> dests = me.getItinerary(cities_to_visit);
   
-    // TODO: YOUR CODE HERE
+    // MY CODE
     sort(dests.begin()+1, dests.end());
     
     string firstDest = dests.at(0);

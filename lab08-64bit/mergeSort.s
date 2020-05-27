@@ -18,48 +18,48 @@
 ; Parameter 3 is the right index in the array
 ; Return type is void 
 mergeSort:
-        push    rbp
-        mov     rbp, rsp
-        sub     rsp, 32
-        mov     QWORD [rbp-24], rdi
-        mov     DWORD [rbp-28], esi
-        mov     DWORD [rbp-32], edx
-        mov     eax, DWORD [rbp-28]
-        cmp     eax, DWORD [rbp-32]
-        jge     mergeSort_end
-        mov     eax, DWORD [rbp-32]
-        sub     eax, DWORD [rbp-28]
-        mov     edx, eax
-        shr     edx, 31
-        add     eax, edx
-        sar     eax, 1
-        mov     edx, eax
-        mov     eax, DWORD [rbp-28]
-        add     eax, edx
-        mov     DWORD [rbp-4], eax
-        mov     edx, DWORD [rbp-4]
-        mov     ecx, DWORD [rbp-28]
-        mov     rax, QWORD [rbp-24]
-        mov     esi, ecx
-        mov     rdi, rax
-        call    mergeSort
-        mov     eax, DWORD [rbp-4]
-        lea     ecx, [rax+1]
-        mov     edx, DWORD [rbp-32]
-        mov     rax, QWORD [rbp-24]
-        mov     esi, ecx
-        mov     rdi, rax
-        call    mergeSort
-        mov     ecx, DWORD [rbp-32]
-        mov     edx, DWORD [rbp-4]
-        mov     esi, DWORD [rbp-28]
-        mov     rax, QWORD [rbp-24]
-        mov     rdi, rax
-        call    merge
+    push rbp
+    mov  rbp, rsp
+    sub  rsp, 32
+    mov  QWORD [rbp-24], rdi
+    mov  DWORD [rbp-28], esi
+    mov  DWORD [rbp-32], edx
+    mov  eax, DWORD [rbp-28]
+    cmp  eax, DWORD [rbp-32]
+    jge  mergeSort_end
+    mov  eax, DWORD [rbp-32]
+    sub  eax, DWORD [rbp-28]
+    mov  edx, eax
+    shr  edx, 31
+    add  eax, edx
+    sar  eax, 1
+    mov  edx, eax
+    mov  eax, DWORD [rbp-28]
+    add  eax, edx
+    mov  DWORD [rbp-4], eax
+    mov  edx, DWORD [rbp-4]
+    mov  ecx, DWORD [rbp-28]
+    mov  rax, QWORD [rbp-24]
+    mov  esi, ecx
+    mov  rdi, rax
+    call mergeSort
+    mov  eax, DWORD [rbp-4]
+    lea  ecx, [rax+1]
+    mov  edx, DWORD [rbp-32]
+    mov  rax, QWORD [rbp-24]
+    mov  esi, ecx
+    mov  rdi, rax
+    call mergeSort
+    mov  ecx, DWORD [rbp-32]
+    mov  edx, DWORD [rbp-4]
+    mov  esi, DWORD [rbp-28]
+    mov  rax, QWORD [rbp-24]
+    mov  rdi, rax
+    call merge
 
 mergeSort_end:
-        leave
-        ret
+    leave
+    ret
 
 
 ; Parameter 1 is a pointer to the int array 

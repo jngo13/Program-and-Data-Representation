@@ -1,10 +1,7 @@
-//Justin Ngo
-//jmn4fms
-//  stack.h
-//  
-//
-//  Created by Justin on 2/7/20.
-//
+// Justin Ngo
+// jmn4fms
+// stack.h
+// Created by Justin on 2/7/20.
 
 #ifndef STACK_H
 #define STACK_H

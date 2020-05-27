@@ -1,7 +1,7 @@
 // Justin Ngo
 // jmn4fms
-//  bitCounter.cpp
-//  Created by Justin on 2/13/20.
+// bitCounter.cpp
+// Created by Justin on 2/13/20.
 
 #include <stdio.h>
 #include <iostream>

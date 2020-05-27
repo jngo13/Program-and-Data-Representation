@@ -69,7 +69,7 @@ C015	041	jmp	while(j > 1)
 4002	044	store	i = accumulator
 C005	045	jmp	j = size - 1	
 3048	046	
-0000	047	Blank Space
+0000	047	blank space
 0002	048	two
 0001	049	one
 0036	04A	three six

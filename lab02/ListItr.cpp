@@ -1,9 +1,6 @@
-//Justin Ngo, jmn4fms
-//  ListItr.cpp
-//  
-//
-//  Created by Justin on 1/26/20.
-//
+// Justin Ngo, jmn4fms
+// ListItr.cpp
+// Created by Justin on 1/26/20.
 
 #include <stdio.h>
 #include <iostream>
@@ -14,11 +11,11 @@
 using namespace std;
 
 ListItr::ListItr(){
-    current=NULL;
+    current = NULL;
 }
 
 ListItr::ListItr(ListNode* theNode){
-    current= theNode;
+    current = theNode;
 }
 
 bool ListItr:: isPastEnd() const{

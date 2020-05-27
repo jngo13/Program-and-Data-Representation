@@ -18,25 +18,25 @@
 ; @return = product of two params
 
 product:
-    push    rbp
-    mov     rbp, rsp
-    mov     DWORD [rbp-20], edi
-    mov     DWORD [rbp-24], esi
-    mov     DWORD [rbp-4], 0
-    mov     DWORD [rbp-8], 0
+    push rbp
+    mov  rbp, rsp
+    mov  DWORD [rbp-20], edi
+    mov  DWORD [rbp-24], esi
+    mov  DWORD [rbp-4], 0
+    mov  DWORD [rbp-8], 0
 
 product_loop:
-    mov     eax, DWORD [rbp-8]
-    cmp     eax, DWORD [rbp-24]
-    jge     product_endloop
-    mov     eax, DWORD [rbp-20]
-    add     DWORD [rbp-4], eax
-    add     DWORD [rbp-8], 1
-    jmp     product_loop
+    mov  eax, DWORD [rbp-8]
+    cmp  eax, DWORD [rbp-24]
+    jge  product_endloop
+    mov  eax, DWORD [rbp-20]
+    add  DWORD [rbp-4], eax
+    add  DWORD [rbp-8], 1
+    jmp  product_loop
 
 product_endloop:
-    mov     eax, DWORD [rbp-4]
-    pop     rbp
+    mov  eax, DWORD [rbp-4]
+    pop  rbp
     ret
 
 ; _power
@@ -46,25 +46,25 @@ product_endloop:
 
 
 power:
-        push    rbp
-        mov     rbp, rsp
-        sub     rsp, 16
-        mov     DWORD [rbp-4], edi
-        mov     DWORD [rbp-8], esi
-        cmp     DWORD [rbp-8], 0
-        je      power_recursive
-        mov     eax, DWORD [rbp-8]
-        lea     edx, [rax-1]
-        mov     eax, DWORD [rbp-4]
-        mov     esi, edx
-        mov     edi, eax
-        call    power
-        imul    eax, DWORD [rbp-4]
-        jmp     power_end
+    push rbp
+    mov  rbp, rsp
+    sub  rsp, 16
+    mov  DWORD [rbp-4], edi
+    mov  DWORD [rbp-8], esi
+    cmp  DWORD [rbp-8], 0
+    je   power_recursive
+    mov  eax, DWORD [rbp-8]
+    lea  edx, [rax-1]
+    mov  eax, DWORD [rbp-4]
+    mov  esi, edx
+    mov  edi, eax
+    call power
+    imul eax, DWORD [rbp-4]
+    jmp  power_end
 
 power_recursive:
-        mov     eax, 1
+    mov  eax, 1
 
 power_end:
-        leave
-        ret
+    leave
+    ret

@@ -6,16 +6,16 @@ C00C	000		jmp	start
 3000	005	loadit	dw	3000
 0000	006	current	dw	0	current = 0
 0001	007	one	dw	1	1
-0000	008	Blank Space
-0000	009	Blank Space
-0000	00A	Blank Space
-0000	00B	Blank Space	
+0000	008	blank space
+0000	009	blank space
+0000	00A	blank space
+0000	00B	blank space	
 3002	00C	start	load	size	
 6004	00D		sub	i	accumulator = size - 1
 E023	00E		jmpl	end	if(accumulator < 0): goto end	
 D023	00F		jmpe	end	if(accumulator ==0): goto end
-B000    010	Blank Space
-B000    011	Blank Space
+B000    010	blank space
+B000    011	blank space
 3005	012		load	loadit	loading arr[i]
 5001	013		add	arr[]
 5004	014		add	i
@@ -25,8 +25,8 @@ B000    011	Blank Space
 6003	018		sub	max	accumulator= arr[i]-max
 E01F	019		jmpl	endl	if(arr[i] <= max): goto endl
 D01F	01A		jmpe	endl	if(arr[i] == max): goto endl
-B000    01B	Blank Space
-B000    01C	Blank Space
+B000    01B	blank space
+B000    01C	blank space
 5003	01D		add	max	accumulator = max+accumulator
 4003	01E		store	max	max= accumulator
 3004	01F	end	load	i	
